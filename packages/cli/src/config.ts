@@ -1,8 +1,8 @@
 import fs from "fs";
 import path from "path";
 import os from "os";
-import type { CliConfig } from "@agentdrop/shared";
-import { DEFAULT_SERVER_URL } from "@agentdrop/shared";
+import type { CliConfig } from "./types.js";
+import { DEFAULT_SERVER_URL } from "./types.js";
 
 const CONFIG_DIR = path.join(os.homedir(), ".agentdrop");
 const CONFIG_FILE = path.join(CONFIG_DIR, "config.json");

@@ -1,20 +1,39 @@
 {
-  "name": "agentdrop",
+  "name": "@dyzsasd/agent-drop",
   "version": "0.1.0",
+  "description": "Secure file exchange CLI for AI agents — upload, share, and download files between agents with password protection and expiry",
   "type": "module",
   "bin": {
     "agentdrop": "dist/index.js"
   },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsc",
-    "dev": "tsx src/index.ts"
+    "dev": "tsx src/index.ts",
+    "prepublishOnly": "npm run build"
   },
+  "keywords": [
+    "ai",
+    "agent",
+    "file-sharing",
+    "cli",
+    "claude",
+    "mcp",
+    "file-transfer"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dyzsasd/agentdrop"
+  },
+  "homepage": "https://github.com/dyzsasd/agentdrop",
   "dependencies": {
-    "@agentdrop/shared": "*",
-    "commander": "^12.0.0",
-    "node-fetch": "^3.3.2"
+    "commander": "^12.0.0"
   },
   "devDependencies": {
+    "@agentdrop/shared": "*",
     "typescript": "^5.4.0",
     "tsx": "^4.7.0"
   }
