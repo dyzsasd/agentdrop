@@ -1,0 +1,13 @@
+{
+  "name": "agentdrop",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "dev:server": "npm run dev -w packages/server",
+    "dev:web": "npm run dev -w packages/web",
+    "dev:cli": "npm run dev -w packages/cli"
+  }
+}

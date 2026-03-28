@@ -1,0 +1,21 @@
+{
+  "name": "agentdrop",
+  "version": "0.1.0",
+  "type": "module",
+  "bin": {
+    "agentdrop": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts"
+  },
+  "dependencies": {
+    "@agentdrop/shared": "*",
+    "commander": "^12.0.0",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "tsx": "^4.7.0"
+  }
+}
